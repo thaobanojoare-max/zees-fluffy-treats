@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order | Zee's Fluffy Treats</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Zee's Fluffy Treats</div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="order-header">
+
+        <p class="welcome">PLACE YOUR ORDER</p>
+
+        <h1>What would you like?</h1>
+
+        <p>
+            Fill in your details and tell us what you'd like to order.
+        </p>
+
+    </section>
+
+
+    <section class="order-section">
+
+        <form id="orderForm">
+
+            <label for="customerName">Your Name</label>
+
+            <input
+                type="text"
+                id="customerName"
+                name="Customer Name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="Phone Number"
+                placeholder="e.g. 08012345678"
+                required
+            >
+
+
+            <label for="food">What would you like to order?</label>
+
+            <select id="food" name="Order" required>
+
+                <option value="">-- Select an item --</option>
+
+                <optgroup label="🍪 Snacks">
+                    <option>Buns - ₦100 / piece</option>
+                    <option>Egg Roll - ₦500 / piece</option>
+                    <option>Cookie - ₦500 / piece</option>
+                </optgroup>
+
+                <optgroup label="🥛 Yoghurt">
+                    <option>Yoghurt - Small - ₦1,500</option>
+                    <option>Yoghurt - Medium - ₦3,500</option>
+                    <option>Yoghurt - Large - ₦4,500</option>
+                </optgroup>
+
+                <optgroup label="🍰 Cake Parfait">
+                    <option>Vanilla Cake Parfait - Small Cup - ₦1,500</option>
+                    <option>Vanilla Cake Parfait - Regular - ₦2,500</option>
+                    <option>Red Velvet Cake Parfait - Small Cup - ₦1,800</option>
+                    <option>Red Velvet Cake Parfait - Regular - ₦2,800</option>
+                    <option>Chocolate Cake Parfait - Small Cup - ₦1,800</option>
+                    <option>Chocolate Cake Parfait - Regular - ₦2,800</option>
+                    <option>3-in-1 Cake Parfait - Small Cup - ₦2,000</option>
+                    <option>3-in-1 Cake Parfait - Regular - ₦3,000</option>
+                </optgroup>
+
+                <optgroup label="🍓 Yoghurt Parfait">
+                    <option>Yoghurt Parfait - Small - ₦2,000</option>
+                    <option>Yoghurt Parfait - Regular - ₦3,500</option>
+                    <option>Yoghurt Parfait - Large - ₦4,500</option>
+                </optgroup>
+
+                <optgroup label="🎂 Foil Cake">
+                    <option>Regular Vanilla Foil Cake - ₦1,400</option>
+                    <option>Regular Chocolate Foil Cake - ₦1,600</option>
+                    <option>Regular Red Velvet Foil Cake - ₦1,600</option>
+                </optgroup>
+
+                <optgroup label="🧁 Cupcakes">
+                    <option>Vanilla Cupcakes - Pack of 6 - ₦2,400</option>
+                    <option>Red Velvet Cupcakes - Pack of 6 - ₦3,000</option>
+                    <option>Chocolate Cupcakes - Pack of 6 - ₦3,000</option>
+                </optgroup>
+
+                <optgroup label="🎂 Cakes">
+                    <option>Size 4 Bento Cake - ₦5,000</option>
+                    <option>Size 5 Bento Cake - ₦8,000</option>
+                    <option>Size 6 Cake - ₦10,000</option>
+                    <option>Size 7 Cake - ₦15,000</option>
+                    <option>Size 8 Cake - ₦20,000</option>
+                </optgroup>
+
+                <optgroup label="🎁 Surprise Packages">
+                    <option>Surprise Package - Contact us for details</option>
+                </optgroup>
+
+            </select>
+
+
+            <label for="quantity">Quantity</label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="Quantity"
+                min="1"
+                placeholder="Enter quantity"
+                required
+            >
+
+
+            <label for="delivery">Delivery or Pick-up</label>
+
+            <select
+                id="delivery"
+                name="Delivery or Pick-up"
+                required
+            >
+                <option value="">-- Choose one --</option>
+                <option>Delivery</option>
+                <option>Pick-up</option>
+            </select>
+
+
+            <label for="address">Delivery Address</label>
+
+            <textarea
+                id="address"
+                name="Address"
+                rows="4"
+                placeholder="Enter your delivery address"
+            ></textarea>
+
+
+            <label for="message">Additional Information</label>
+
+            <textarea
+                id="message"
+                name="Additional Information"
+                rows="4"
+                placeholder="Tell us anything else about your order..."
+            ></textarea>
+
+
+            <button type="submit" class="menu-btn">
+                Send Order on WhatsApp 📲
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section class="delivery">
+
+        <h2>Delivery Available 🚚</h2>
+
+        <p>
+            Zee's Fluffy Treats delivers across Lagos.
+            After submitting your order, we'll contact you to confirm
+            availability, price and delivery details.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <h3>Zee's Fluffy Treats</h3>
+
+        <p>Snacks • Parfait • Cakes</p>
+
+        <p>Lagos, Nigeria</p>
+
+        <p>📞 +234 816 240 1432</p>
+
+        <p class="copyright">
+            © 2026 Zee's Fluffy Treats. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        document.getElementById("orderForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("customerName").value;
+            const phone = document.getElementById("phone").value;
+            const order = document.getElementById("food").value;
+            const quantity = document.getElementById("quantity").value;
+            const delivery = document.getElementById("delivery").value;
+            const address = document.getElementById("address").value;
+            const additional = document.getElementById("message").value;
+
+            let whatsappMessage =
+                "Hello Zee's Fluffy Treats! 👋\n\n" +
+                "I would like to place an order.\n\n" +
+
+                "👤 Name: " + name + "\n" +
+                "📞 Phone: " + phone + "\n" +
+                "🍰 Order: " + order + "\n" +
+                "🔢 Quantity: " + quantity + "\n" +
+                "🚚 Delivery/Pick-up: " + delivery + "\n" +
+                "📍 Address: " + address + "\n";
+
+            if (additional.trim() !== "") {
+                whatsappMessage +=
+                    "📝 Additional Information: " +
+                    additional +
+                    "\n";
+            }
+
+            whatsappMessage +=
+                "\nThank you! 😊";
+
+            const whatsappNumber = "2348162401432";
+
+            const whatsappURL =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(whatsappMessage);
+
+            window.location.href = whatsappURL;
+
+        });
+
+    </script>
+
+</body>
+</html>

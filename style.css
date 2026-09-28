@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #3b2520;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b85c5c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b2520;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b85c5c;
+}
+
+/* Hero */
+
+.hero {
+    max-width: 1100px;
+    margin: auto;
+    min-height: 620px;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #b85c5c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 18px;
+    color: #6d5550;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #b85c5c;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #914747;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #b85c5c;
+    color: #b85c5c;
+}
+
+.secondary-btn:hover {
+    background: #b85c5c;
+    color: white;
+}
+
+/* Hero Card */
+
+.hero-card {
+    width: 330px;
+    height: 360px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.food-icon {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #8a6b64;
+}
+
+/* Services */
+
+.services {
+    background: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services > h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-card {
+    background: #fff8f5;
+    padding: 35px 25px;
+    border-radius: 20px;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card span {
+    font-size: 50px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.service-card p {
+    color: #725c56;
+}
+
+/* Delivery */
+
+.delivery {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 25px;
+    text-align: center;
+    background: #f8dfd8;
+    border-radius: 30px;
+}
+
+.delivery h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.delivery p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #684f48;
+}
+
+/* Footer */
+
+footer {
+    background: #3b2520;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+}
+/* =========================
+   MENU PAGE
+========================= */
+
+.menu-header {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.menu-header h1 {
+    font-size: 45px;
+    margin: 10px 0 15px;
+}
+
+.menu-header > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #725c56;
+    font-size: 17px;
+}
+
+.menu-section {
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 0 20px;
+}
+
+.menu-section > h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+}
+
+.menu-image {
+    height: 180px;
+    border-radius: 18px;
+    background: #fff0eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.menu-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.menu-card p {
+    color: #725c56;
+}
+
+.menu-card .price {
+    color: #b85c5c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.menu-btn {
+    display: inline-block;
+    background: #b85c5c;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background: #914747;
+}
+
+/* Menu mobile view */
+
+@media (max-width: 700px) {
+
+    .menu-header h1 {
+        font-size: 35px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Space between Cake Parfait price columns */
+.price-category table th:nth-child(2),
+.price-category table td:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.price-category table th:nth-child(3),
+.price-category table td:nth-child(3) {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* Introduction Section */
+.intro-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 20px;
+}
+
+.intro-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.intro-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px auto;
+    max-width: 750px;
+}
+/* Delivery Information */
+.delivery-info {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 20px;
+}
+
+.delivery-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.delivery-info p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 8px 0;
+}
+.logo {
+  width: 130px;      /* Change this number to make it bigger or smaller */
+  height: auto;      /* Keeps the logo from stretching */
+  display: block;
+  margin: 10px 0;    /* Optional: adds a little space around it */
+}
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+.delivery-info {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.delivery-info h3 {
+    margin-bottom: 8px;
+}
+
+.delivery-info p {
+    text-align: center;
+}
+.menu-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+    display: inline-block;
+}
